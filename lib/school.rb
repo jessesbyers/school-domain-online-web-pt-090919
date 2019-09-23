@@ -1,7 +1,7 @@
 #require 'pry'
 class School
   attr_accessor :name, :grade
-  attr_reader :roster
+#  attr_reader :roster
 
   def initialize(name)
     @name = name
@@ -12,10 +12,10 @@ class School
    if roster.has_key?(grade) == false
       roster[grade] = []
       roster[grade] << name
-  else
-    roster[grade] << name
-end
-    roster
+   else
+      roster[grade] << name
+   end
+  roster
   end
 
   def grade(grade)
